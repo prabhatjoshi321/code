@@ -6,13 +6,13 @@ void repString()
 {
     char str[100], pat[100], rep[100], ans[100];
     printf("\nEnter the main string: ");
-    gets(str);
+    fgets(str, 10, stdin);
 
     printf("\nEnter the pattern string: ");
-    gets(pat);
+    fgets(pat, 10, stdin);
 
     printf("\nEnter the replace string: ");
-    gets(rep);
+    fgets(rep, 10, stdin);
 
     int s = 0, s1 = 0;
     int p = 0, a = 0;
@@ -24,7 +24,7 @@ void repString()
         if(str[s1] == pat[p])
         {
             ++s1; ++p;
-            if(pat[p] == '\0')
+            if(pat[p] != '\0')
             {
                 flag = 1;
                 for(int i = 0; rep[i] != '\0'; ++i,++a)

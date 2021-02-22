@@ -16,8 +16,7 @@ void push()
         printf("Enter the element to be inserted: ");
         int elem;
         scanf("%d",&elem);
-        ++top;
-        arr[top] = elem;
+        arr[++top] = elem;
     }
     
 }
