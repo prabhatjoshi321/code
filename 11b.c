@@ -13,7 +13,7 @@ void dfs(int u){
 }
 
 void main(){
-    int i, source;
+    int source;
     printf("Enter the number of nodes in the graph:");
     scanf("%d",&n);
     printf("Enter the adjacency matrix:");
