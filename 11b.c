@@ -25,7 +25,7 @@ void main(){
     }
 
     for(source=0; source<n; source++){
-        for(i=0; i<n; i++)
+        for(int i=0; i<n; i++)
             s[i]=0;
         printf("The nodes reachable from %d", source);
         dfs(source);
