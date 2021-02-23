@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-#define HASH_SIZE 5
+#define HASH_SIZE 100
 
 typedef struct employee
 {
@@ -12,8 +12,7 @@ typedef struct employee
 /*Create initial hash table*/
 void initialize_hash_table(EMPLOYEE a[])
 {
-    int i;
-    for(i=0; i<HASH_SIZE; i++)
+    for(int i=0; i<HASH_SIZE; i++)
     {
         a[i].id=0;
     }
