@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-#define HASH_SIZE 100
+#define HASH_SIZE 5
 
 typedef struct employee
 {
